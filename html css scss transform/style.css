@@ -1,0 +1,94 @@
+/* 
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+}
+
+.wrap {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box1 {
+    transform: rotate(45deg);
+}
+
+.box2 {
+    transform: scale(60%);
+    transition: 1s;
+
+    &:hover {
+        transform: scale(50%);
+    }
+}
+
+.box3 {
+    transform: skew(0deg);
+    transition: 1s;
+
+    &:hover {
+        transform: scale(50%);
+    }
+}
+
+.box4 {
+    transform: translate(450px, -210px);
+}
+
+.transform {
+    /* масштабирует */
+    /* transform: scale(2); */
+
+    /* вращает */
+    /* transform: rotate(45deg); */
+
+    /* скручивает */
+    /* transform: skew(45deg); */
+
+    /* перемещает */
+    /* transform: translate(100px, 100px);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* bg1 */
+    background-image: url(./ебанько.jpg);
+
+    /* bg2 */
+    background-repeat: no-repeat;
+
+    /* bg3 */
+    background-size: cover;
+}
+
+.ball {
+    width: 100px;
+
+    animation: anim1 4s infinite alternate;
+}
+
+@keyframes anim1 {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+        rotate: 0;
+    }
+
+    20% {
+        margin-top: 300px;
+    }
+
+    100% {
+        margin-top: 300px;
+        margin-left: 1000px;
+        rotate: 1800deg;
+    }
+}
